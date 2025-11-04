@@ -1,0 +1,163 @@
+/* style.css */
+:root {
+    --cor-principal: #007bff; /* Azul primário */
+    --cor-secundaria: #343a40; /* Cinza escuro para navegação */
+    --cor-fundo: #f8f9fa; /* Cinza claro */
+    --cor-texto: #343a40;
+    --cor-destaque: #dc3545; /* Vermelho para alerta/DDoS */
+    --cor-sombra: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+/* --- Cabeçalho e Navegação (Header & Nav) --- */
+header {
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 1.5em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 5px;
+}
+
+nav a:hover, nav a.active {
+    color: var(--cor-principal);
+    border-bottom: 2px solid var(--cor-principal);
+}
+
+/* --- Conteúdo Principal (Main Content) --- */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: var(--cor-principal);
+    font-size: 2em;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: var(--cor-secundaria);
+    margin-top: 1.5em;
+    font-size: 1.4em;
+    border-left: 4px solid var(--cor-principal);
+    padding-left: 10px;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: var(--cor-sombra);
+}
+
+/* --- Elementos Específicos --- */
+.hero {
+    background: url('placeholder-bg.jpg') no-repeat center center/cover; /* Altere para sua imagem de fundo */
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+th {
+    background-color: var(--cor-fundo);
+    font-weight: 600;
+}
+
+/* Box de Alerta */
+.alert-box {
+    background-color: #fddfdf;
+    border-left: 5px solid var(--cor-destaque);
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.alert-box h3 {
+    color: var(--cor-destaque);
+    margin-top: 0;
+    border: none;
+    padding-left: 0;
+}
+
+/* --- Rodapé (Footer) --- */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--cor-secundaria);
+    color: #adb5bd;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
