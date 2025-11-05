@@ -87,7 +87,7 @@ section {
 
 /* --- Elementos Específicos --- */
 .hero {
-    background: url('placeholder-bg.jpg') no-repeat center center/cover; /* Altere para sua imagem de fundo */
+    background: url('../assets/img/fundo-seguranca.jpg') no-repeat center center/cover; /* Altere para sua imagem de fundo */
     background-color: #212529;
     color: white;
     text-align: center;
@@ -167,6 +167,7 @@ footer {
     font-size: 0.9em;
 
 }
+
 
 
 
