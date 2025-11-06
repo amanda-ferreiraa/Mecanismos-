@@ -21,12 +21,94 @@
     </header>
 
     <div class="container">
-        <div class="hero">
-            <h1>Seminário: Mecanismos de Segurança</h1>
-            <h2>Sistemas computacionais e segurança</h2>
-            <p>Professor(a): Charlene Cássia de Resende</p>
-            <p>GRUPO: Izabela Cardoso, Victor Gabriel e Luiz Otavio</p>
-            <a href="fundamentos.html" class="cta-button">Conheça a Tríade CIA</a>
+        <div class="hero cyber-panel">
+            <div class="hero-grid">
+                <div class="status-indicators">
+                    <div class="indicator active">
+                        <span class="dot"></span>
+                        <span class="label">SISTEMA ATIVO</span>
+                    </div>
+                    <div class="indicator scanning">
+                        <span class="dot"></span>
+                        <span class="label">ESCANEANDO</span>
+                    </div>
+                    <div class="indicator secure">
+                        <span class="dot"></span>
+                        <span class="label">SEGURO</span>
+                    </div>
+                </div>
+                
+                <div class="hero-content">
+                    <div class="title-container">
+                        <div class="title-prefix">[SISTEMA_EDUCACIONAL]</div>
+                        <h1 class="cyber-title glitch-effect">MECANISMOS DE SEGURANÇA</h1>
+                        <div class="subtitle-container">
+                            <span class="typing-cursor">></span>
+                            <h2 class="typing-text">SISTEMAS COMPUTACIONAIS E SEGURANÇA</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="info-panel">
+                        <div class="info-line">
+                            <span class="info-label">[DOCENTE]:</span>
+                            <span class="info-value">Charlene Cássia de Resende</span>
+                        </div>
+                        <div class="info-line">
+                            <span class="info-label">[EQUIPE]:</span>
+                            <span class="info-value">Izabela Cardoso • Victor Gabriel • Luiz Otavio</span>
+                        </div>
+                        <div class="info-line">
+                            <span class="info-label">[STATUS]:</span>
+                            <span class="info-value access-granted">ACESSO LIBERADO</span>
+                        </div>
+                    </div>
+                    
+                    <div class="action-zone">
+                        <a href="fundamentos.html" class="cyber-access-btn">
+                            <div class="btn-border"></div>
+                            <div class="btn-content">
+                                <span class="btn-icon">�️</span>
+                                <span class="btn-text">INICIAR PROTOCOLO CIA</span>
+                                <span class="btn-arrow">▶</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="system-monitor">
+                    <div class="monitor-title">MONITOR DO SISTEMA</div>
+                    <div class="monitor-stats">
+                        <div class="stat">
+                            <span class="stat-label">PROTEÇÃO</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill protection"></div>
+                            </div>
+                            <span class="stat-value">98%</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">INTEGRIDADE</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill integrity"></div>
+                            </div>
+                            <span class="stat-value">100%</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">DISPONIBILIDADE</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill availability"></div>
+                            </div>
+                            <span class="stat-value">95%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scan-line"></div>
+            <div class="data-stream">
+                <div class="stream-line"></div>
+                <div class="stream-line"></div>
+                <div class="stream-line"></div>
+            </div>
         </div>
 
         <section>
@@ -42,21 +124,62 @@
 
         <section>
             <h2>Visão Rápida dos Tópicos</h2>
-            <div style="display: flex; gap: 20px;">
-                <article style="flex: 1; padding: 15px; border: 1px solid #ccc; border-radius: 5px;">
-                    <h3>Conceitos</h3>
-                    <p>Entenda a base de tudo: Criptografia, Hashing e a Lei Geral de Proteção de Dados (LGPD).</p>
-                    <a href="fundamentos.html">Ver Detalhes &rarr;</a>
+            <div class="topics-grid">
+                <article class="topic-card security-concepts">
+                    <div class="card-header">
+                        <div class="card-icon">🔐</div>
+                        <h3>Fundamentos de Segurança</h3>
+                        <div class="card-status">ESSENCIAL</div>
+                    </div>
+                    <div class="card-content">
+                        <p>Base teórica fundamental: <strong>Criptografia</strong>, <strong>Hashing</strong> e conformidade com a <strong>LGPD</strong>.</p>
+                        <ul class="card-features">
+                            <li>Algoritmos criptográficos</li>
+                            <li>Funções hash seguras</li>
+                            <li>Proteção de dados pessoais</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="fundamentos.html" class="card-btn">Explorar Conceitos</a>
+                    </div>
                 </article>
-                <article style="flex: 1; padding: 15px; border: 1px solid #ccc; border-radius: 5px;">
-                    <h3>Ferramentas</h3>
-                    <p>Firewall, IDS/IPS, MFA e as estratégias de defesa em camadas (Defense in Depth).</p>
-                    <a href="mecanismos.html">Ver Ferramentas &rarr;</a>
+
+                <article class="topic-card security-tools">
+                    <div class="card-header">
+                        <div class="card-icon">🛡️</div>
+                        <h3>Ferramentas de Proteção</h3>
+                        <div class="card-status">CRÍTICO</div>
+                    </div>
+                    <div class="card-content">
+                        <p>Arsenal tecnológico: <strong>Firewall</strong>, <strong>IDS/IPS</strong>, <strong>MFA</strong> e estratégias multicamadas.</p>
+                        <ul class="card-features">
+                            <li>Defense in Depth</li>
+                            <li>Detecção de intrusão</li>
+                            <li>Autenticação multifator</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="mecanismos.html" class="card-btn">Ver Ferramentas</a>
+                    </div>
                 </article>
-                <article style="flex: 1; padding: 15px; border: 1px solid #ccc; border-radius: 5px;">
-                    <h3>Ameaça Crítica</h3>
-                    <p>Foco nos ataques DDoS, como eles funcionam e as táticas de mitigação mais eficazes.</p>
-                    <a href="ddos.html">Ver DDoS &rarr;</a>
+
+                <article class="topic-card threat-analysis">
+                    <div class="card-header">
+                        <div class="card-icon">⚠️</div>
+                        <h3>Ameaças DDoS</h3>
+                        <div class="card-status">ALERTA</div>
+                    </div>
+                    <div class="card-content">
+                        <p>Análise de ataques distribuídos: <strong>Vetores</strong>, <strong>Mitigação</strong> e <strong>Resposta</strong> a incidentes.</p>
+                        <ul class="card-features">
+                            <li>Tipos de ataques DDoS</li>
+                            <li>Técnicas de mitigação</li>
+                            <li>Planos de contingência</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="ddos.html" class="card-btn">Analisar Ameaças</a>
+                    </div>
                 </article>
             </div>
         </section>
