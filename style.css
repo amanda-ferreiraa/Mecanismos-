@@ -87,13 +87,33 @@ section {
 
 /* --- Elementos Específicos --- */
 .hero {
-    background: url('../assets/img/fundo-seguranca.jpg') no-repeat center center/cover; /* Altere para sua imagem de fundo */
-    background-color: #212529;
+    background-image: url('assets/img/fundo-seguranca.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #212529; /* Fallback caso a imagem não carregue */
     color: white;
     text-align: center;
     padding: 80px 20px;
     border-radius: 8px;
     margin-bottom: 30px;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Sobreposição semitransparente para legibilidade */
+    border-radius: 8px;
+}
+
+.hero * {
+    position: relative;
+    z-index: 1;
 }
 
 .hero h1 {
